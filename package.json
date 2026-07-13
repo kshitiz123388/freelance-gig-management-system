@@ -1,0 +1,16 @@
+{
+  "name": "freelance-gig-management-system",
+  "version": "1.0.0",
+  "description": "Freelance Gig Management System",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

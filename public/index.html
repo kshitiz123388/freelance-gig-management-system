@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Gig Management System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="#" class="brand-logo" id="nav-brand-link">
+                💼 Gig Manager
+            </a>
+
+            <nav class="nav-links" id="nav-auth-links">
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- Notification -->
+    <div id="notification-banner" class="notification hidden"></div>
+
+    <!-- Main -->
+    <main class="container content-area">
+
+        <!-- Dashboard -->
+
+        <section id="view-dashboard" class="app-view">
+
+            <div class="view-header">
+
+                <div>
+
+                    <h1 class="view-title">
+                        Freelance Gigs
+                    </h1>
+
+                    <p class="view-subtitle">
+                        Manage all your freelance projects.
+                    </p>
+
+                </div>
+
+                <button id="btn-go-add-gig" class="btn btn-primary hidden">
+                    + Add Gig
+                </button>
+
+            </div>
+
+            <div id="gigs-loading" class="loading-spinner">
+                Loading...
+            </div>
+
+            <div id="gigs-grid-container" class="gigs-grid">
+
+            </div>
+
+            <div id="gigs-empty-state" class="empty-state hidden">
+                No Gig Found
+            </div>
+
+        </section>
+
+        <!-- Login -->
+
+        <section id="view-login" class="app-view hidden">
+
+            <div class="auth-card">
+
+                <h2 class="auth-title">
+                    Login
+                </h2>
+
+                <form id="form-user-login">
+
+                    <div class="form-group">
+
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            id="login-email"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Password</label>
+
+                        <input
+                            type="password"
+                            id="login-password"
+                            required>
+
+                    </div>
+
+                    <button class="btn btn-primary btn-block">
+                        Login
+                    </button>
+
+                </form>
+
+                <div class="auth-footer">
+
+                    Don't have an account?
+
+                    <a href="#" id="link-go-register">
+                        Register
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Register -->
+
+        <section id="view-register" class="app-view hidden">
+
+            <div class="auth-card">
+
+                <h2 class="auth-title">
+                    Register
+                </h2>
+
+                <form id="form-user-register">
+
+                    <div class="form-group">
+
+                        <label>Name</label>
+
+                        <input
+                            type="text"
+                            id="register-name"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            id="register-email"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Password</label>
+
+                        <input
+                            type="password"
+                            id="register-password"
+                            required>
+
+                    </div>
+
+                    <button class="btn btn-success btn-block">
+                        Register
+                    </button>
+
+                </form>
+
+                <div class="auth-footer">
+
+                    Already have an account?
+
+                    <a href="#" id="link-go-login">
+                        Login
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Gig Form -->
+
+        <section id="view-gig-form" class="app-view hidden">
+
+            <div class="form-card">
+
+                <h2
+                    class="auth-title"
+                    id="gig-form-view-title">
+
+                    Add Gig
+
+                </h2>
+
+                <form id="form-gig-transaction">
+
+                    <input
+                        type="hidden"
+                        id="gig-form-field-id">
+
+                    <div class="form-group">
+
+                        <label>Title</label>
+
+                        <input
+                            type="text"
+                            id="gig-field-title"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Client Name</label>
+
+                        <input
+                            type="text"
+                            id="gig-field-client"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Budget</label>
+
+                        <input
+                            type="number"
+                            id="gig-field-budget"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Status</label>
+
+                        <select id="gig-field-status">
+
+                            <option>
+                                Available
+                            </option>
+
+                            <option>
+                                In Progress
+                            </option>
+
+                            <option>
+                                Completed
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-actions-row">
+
+                        <button
+                            type="button"
+                            id="btn-gig-form-cancel"
+                            class="btn btn-secondary">
+
+                            Cancel
+
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Save
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>
