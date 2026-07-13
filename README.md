@@ -21,7 +21,9 @@ A simple full-stack web app where freelancers can post, browse, edit, and delete
 ## 🛠 Tech Stack
 
 **Backend:** Node.js, Express.js, bcrypt, jsonwebtoken
+
 **Frontend:** HTML, CSS, vanilla JavaScript (ES modules, `fetch` API)
+
 **Data storage:** In-memory arrays (no database)
 
 ---
