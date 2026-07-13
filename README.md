@@ -76,7 +76,7 @@ freelance-gig-management-system/
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/freelance-gig-management-system.git
+git clone https://github.com/kshitiz123388/freelance-gig-management-system.git
 cd freelance-gig-management-system
 
 # Install dependencies
