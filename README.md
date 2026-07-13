@@ -147,6 +147,3 @@ Authorization: Bearer <your_token>
 
 ---
 
-## 📄 License
-
-ISC
